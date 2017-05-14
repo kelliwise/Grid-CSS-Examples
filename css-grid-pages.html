@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Grid Example - Usage examples of CSS Grid Layout</title>
+	  <!-- <link rel="stylesheet" href="css-grid.css" /> -->
+	  <link rel="stylesheet" href="css-grid-4.css" />
+</head>
+
+
+<body>
+
+<h1>CSS Grid Page Layouts Examples</h1>
+<div id="nav">
+	<ul>
+		<li><a href="css-grid-home.html">Home</a></li>
+		<li><a href="css-grid-line.html">Line based</a></li>
+		<li><a href="css-grid-spans.html">Spans</a></li>
+		<li><a href="css-grid-pages.html">Page Layouts</a></li>
+	</ul>
+</div>
+
+<div id="content">
+
+<p>Grid layout can be used to create page layouts currently done with floats. Let's take a look at some of the possibilities.</p>
+
+<h2>The basic page layout</h2>
+	
+<div class="wrapper1">
+  <div class="box a">Header</div>
+  <div class="box b">Sidebar</div>
+  <div class="box c">Contact</div>
+  <div class="box d">Navigation</div>
+  <div class="box e">Content</div>
+  <div class="box f">Footer</div>  
+</div>
+
+<h2>Remember, no floats, but column heights adjust to the tallest column in that row. </h2>
+<div class="wrapper1">
+  <div class="box a">Header</div>
+  <div class="box b">Sidebar</div>
+  <div class="box c">Contact Information</div>
+  <div class="box d">Navigation</div>
+  <div class="box e"><p>Content</p>
+  <p>Knock over christmas tree scamper spit up on light gray carpet instead of adjacent linoleum kitty! kitty!. Eat all the power cords. Meow meow make meme, make cute face and stare at ceiling, and destroy couch as revenge or if it fits, i sits. Burrow under covers missing until dinner time purr while eating unwrap toilet paper love and coo around boyfriend who purrs and makes the perfect moonlight eyes so i can purr and swat the glittery gleaming yarn to him (the yarn is from a $125 sweater). Intently stare at the same spot. Cereal boxes make for five star accommodation stick butt in face love and coo around boyfriend who purrs and makes the perfect moonlight eyes so i can purr and swat the glittery gleaming yarn to him (the yarn is from a $125 sweater) run outside as soon as door open. Chirp at birds rub whiskers on bare skin act innocent rub face on owner walk on car leaving trail of paw prints on hood and windshield for groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked! then cats take over the world, so fooled again thinking the dog likes me. Bathe private parts with tongue then lick owner's face eat all the power cords i cry and cry and cry unless you pet me, and then maybe i cry just for fun. Chew foot sit on the laptop but run in circles, so cats making all the muffins who's the baby licks paws. Find something else more interesting dream about hunting birds hopped up on catnip, for see owner, run in terror. </p>
+  </div>
+  <div class="box f">Footer</div>  
+</div>
+
+<p>Let's change Box C from Contact information to a Call to Action box at the bottom of the content. We want the sidebar to extend down to cover both the content and the CTA and we want the header to stretch the full width of the browser window.</p>
+<div class="wrapper2">
+  <div class="box a">Header</div>
+  <div class="box b">Sidebar</div>
+  <div class="box c">Remember to Drink Your Ovaltine!</div>
+  <div class="box d">Navigation</div>
+  <div class="box e"><p>Content</p>
+  <p>Knock over christmas tree scamper spit up on light gray carpet instead of adjacent linoleum kitty! kitty!. Eat all the power cords. Meow meow make meme, make cute face and stare at ceiling, and destroy couch as revenge or if it fits, i sits. Burrow under covers missing until dinner time purr while eating unwrap toilet paper love and coo around boyfriend who purrs and makes the perfect moonlight eyes so i can purr and swat the glittery gleaming yarn to him (the yarn is from a $125 sweater). Intently stare at the same spot. Cereal boxes make for five star accommodation stick butt in face love and coo around boyfriend who purrs and makes the perfect moonlight eyes so i can purr and swat the glittery gleaming yarn to him (the yarn is from a $125 sweater) run outside as soon as door open. Chirp at birds rub whiskers on bare skin act innocent rub face on owner walk on car leaving trail of paw prints on hood and windshield for groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked! then cats take over the world, so fooled again thinking the dog likes me. Bathe private parts with tongue then lick owner's face eat all the power cords i cry and cry and cry unless you pet me, and then maybe i cry just for fun. Chew foot sit on the laptop but run in circles, so cats making all the muffins who's the baby licks paws. Find something else more interesting dream about hunting birds hopped up on catnip, for see owner, run in terror. </p>
+  </div>
+  <div class="box f">Footer</div>  
+</div>
+	
+	
+<h2>Let's name the columns and rows instead of just using weird letters</h2>
+<p>This will make it easier to keep track of what's what in the CSS file.
+	
+<div class="wrapper3">
+  <div class="box header">Header</div>
+  <div class="box sidebar">Sidebar</div>
+  <div class="box cta">Remember to Drink Your Ovaltine!</div>
+  <div class="box navigation">Navigation</div>
+  <div class="box content"><p>Content</p>
+  <p>Knock over christmas tree scamper spit up on light gray carpet instead of adjacent linoleum kitty! kitty!. Eat all the power cords. Meow meow make meme, make cute face and stare at ceiling, and destroy couch as revenge or if it fits, i sits. Burrow under covers missing until dinner time purr while eating unwrap toilet paper love and coo around boyfriend who purrs and makes the perfect moonlight eyes so i can purr and swat the glittery gleaming yarn to him (the yarn is from a $125 sweater). Intently stare at the same spot. Cereal boxes make for five star accommodation stick butt in face love and coo around boyfriend who purrs and makes the perfect moonlight eyes so i can purr and swat the glittery gleaming yarn to him (the yarn is from a $125 sweater) run outside as soon as door open. Chirp at birds rub whiskers on bare skin act innocent rub face on owner walk on car leaving trail of paw prints on hood and windshield for groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked! then cats take over the world, so fooled again thinking the dog likes me. Bathe private parts with tongue then lick owner's face eat all the power cords i cry and cry and cry unless you pet me, and then maybe i cry just for fun. Chew foot sit on the laptop but run in circles, so cats making all the muffins who's the baby licks paws. Find something else more interesting dream about hunting birds hopped up on catnip, for see owner, run in terror. </p>
+  </div>
+  <div class="box footer">Footer</div>  
+</div>
+
+<h2>Let's name the columns and rows instead of just using weird letters</h2>
+<p>This will make it easier to keep track of what's what in the CSS file.
+	
+	<h2>Some weird naming stuff</h2>
+<div class="wrapper4">
+  <div class="box header">Header</div>
+  <div class="box sidebar">Sidebar</div>
+  <div class="box cta">Remember to Drink Your Ovaltine!</div>
+  <div class="box navigation">Navigation</div>
+  <div class="box content"><p>Content</p>
+  <p><pre>.wrapper4 .header {
+        grid-area: header;
+    }
+.wrapper4 .sidebar {
+        grid-area: sidebar;
+    }
+.wrapper4 .cta {
+        grid-area: cta;
+    }
+.wrapper4 .navigation {
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+.wrapper4 .content { 
+        grid-area: content;
+    }
+.wrapper4 .footer {
+        grid-area: footer;
+    }
+
+.wrapper4 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+  grid-template-areas:
+  "header header header"
+  "navigation navigation navigation"
+  "content content sidebar"
+  "cta ...... sidebar"
+  "footer footer footer";
+}
+  </pre></p>
+  </div>
+  <div class="box footer">Footer</div>  
+</div>
+
+	
+</div>
+
+</body>
+</html>
